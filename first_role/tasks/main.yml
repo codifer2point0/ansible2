@@ -1,0 +1,9 @@
+---
+- name: add index file
+    file:
+    path: /var/www/html/index.html
+      state: touch
+- name: add text to index file
+    lineinfile:
+      path: /var/www/html/index.html
+      line: <h1> Welcome to Cody's Website! </h1>ks file for first_role
